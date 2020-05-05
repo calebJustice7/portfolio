@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.main-wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* welcome page wrapper */
+
+.welcome-page-wrapper {
+    font-family: 'Poppins';
+    height: 105vh;
+    background-image: url('https://lh3.googleusercontent.com/proxy/nFuu3-BjAioY8nZel4zHVlYPVdxy3g1PJURXcx3OkwD-yxuufT0ZGP7jhGafLz7rby8yOPLY1-RF6vCR_h3S3k_y2SpBeFPbZso');
+    background-size: cover;
+    transform: skew(0deg, -6deg)translateY(-130px);
+}
+
+.welcome-page-wrapper .icon  {
+    font-size: 3em;
+    color: pink;
+    transform: skew(0deg, 6deg);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    cursor: pointer;
+}
+.icon-two{
+    font-size: 3em;
+    color: pink;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    right: 50%;
+    cursor: pointer;
+}
+
+.welcome-page-wrapper .content {
+    position: absolute;
+    bottom: 290px;
+    left: 50px;
+    color: white;
+    transform: skew(0deg, 6deg);
+    /* padding: 20px; */
+    width: 600px;
+}
+
+.welcome-page-wrapper .content .top {
+    font-size: 2.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+}
+
+.welcome-page-wrapper .content .bottom {
+    font-size: 2.4em;
+    font-weight: 650;
+    letter-spacing: 2px;
+}
+
+/* about me page wrapper */
+
+@keyframes move {
+    100% {filter:hue-rotate(360deg)};
+} 
+
+.animate {
+    border: 8px solid;
+    width: 55%;
+    height: 100px;
+    border-color: orange transparent transparent;
+    animation: move 2s linear infinite;
+    margin: auto;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.about-me-wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.about-me-wrapper .content .title {
+    font-weight: 850;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+.about-me-wrapper .content .body {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 1.4em;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-weight: 450;
+}
+
+/* projects page styles */
+.projects-wrapper {
+    background-color: black;
+}
+
+.projects-page-wrapper {
+    height: 105vh;
+    color: white;
+    padding-top: 80px;
+}
+
+.projects-page-wrapper .title {
+    font-size: 2.4em;
+    text-align: left;
+    /* margin-left: 80px;
+    margin-bottom: 55px; */
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+.projects-page-wrapper .categories-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    text-align: center;
+    font-size: 1.15em;
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.projects-page-wrapper .categories-wrapper span {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: black;
+    transition: 0.6s all;
+    border: 1px solid black;
+}
+.projects-page-wrapper .categories-wrapper span:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin-top: 100px; */
+    width: 90%;
+    margin: 0 auto;
+}
+.project-item-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+.project-item-wrapper img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.project-item-wrapper .content .stack {
+    color: #c7c7c7;
+    font-weight: 300;
+    margin-top: 6px;
+}
+.project-item-wrapper .content .project-name {
+    font-size: 1.1em;
+    margin: 6px 0;
+}
+.project-item-wrapper .content .buttons-wrapper {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.project-item-wrapper .content .buttons-wrapper button:first-child {
+    border-radius: 5px;
+    border: none;
+    background-color: #309CDE;
+    color: white;
+    font-size: 1em;
+    padding: 12px 22px;
+    cursor: pointer;
+    outline: none;
+}
+.project-item-wrapper .content .buttons-wrapper button:last-child {
+    border-radius: 5px;
+    border: none;
+    background-color: #314A5B;
+    color: white;
+    font-size: 1em;
+    padding: 12px 22px;
+    cursor: pointer;
+    outline: none;
+}

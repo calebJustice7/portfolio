@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Welcome from './components/welcome';
+import './components/main.css';
+import AboutMe from './components/About-me';
+import Projects from './components/Projects';
+
+class App extends React.Component {
+
+  componentDidMount() {
+    Aos.init({ duration: 1500 });
+  }
+
+  render(){
+    return (
+      <div className="project-wrapper">
+      <div className="main-wrapper">
+        <Welcome />
+
+        <div data-aos="fade-up-right">
+          <AboutMe />
+        </div>
+
+        <div className="projects-wrapper">
+          <div data-aos="fade-down-left">
+            <Projects />
+          </div>
+        </div>
+
+        <h1>Footer</h1>
+      </div>
+      </div>
+    )
+  }
 }
 
 export default App;
